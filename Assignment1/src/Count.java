@@ -1,4 +1,4 @@
-class Count {
+public class Count {
     int wordOccurrence;
 
     //getter and setter methods
@@ -6,12 +6,12 @@ class Count {
         return wordOccurrence;
     }
 
-    public void setWordOccurrence(String word,String str) {
-        wordOccurrence = findWordOccurrence(word,str);
+    public void setWordOccurrence(String word, String str) {
+        wordOccurrence = findWordOccurrence(word, str);
     }
 
-    public int findWordOccurrence(String word,String str)
-    {
+    //This function determines the count of a particular word in the content
+    public int findWordOccurrence(String word, String str) {
         String[] a = str.split(" ");
         // search for pattern in a
         int count = 0;

@@ -6,20 +6,20 @@ import java.io.IOException;
 
 public class Fetcher {
 
+    //This class is responsible for fetching the data from the webpage
     String content;
 
     //getter and setter methods
-    public String getContent()
-    {
+    public String getContent() {
         return content;
     }
-    void setContent(String website)
-    {
-        content=readContent(website);
+
+    void setContent(String website) {
+        content = readContent(website);
     }
 
     //using jsoup to extract data
-    public String readContent(String page){
+    public String readContent(String page) {
 
         Connection conn = Jsoup.connect(page);
         //executing the get request
