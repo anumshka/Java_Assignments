@@ -1,71 +1,68 @@
 import java.io.*;
 import java.util.ArrayList;
 
-class Reader {
+public class Reader {
 
-    ArrayList<String>allUrls;
-    ArrayList<String>allWords;
+    //This class is responsible for reading files words.txt and url.txt
+    ArrayList<String> allUrls;
+    ArrayList<String> allWords;
 
-    public void setAllWords()
-    {
-        allWords=readWords();
+    //sets all the words in an ArrayList
+    public void setAllWords() {
+        allWords = readWords();
     }
-    public void setAllUrls()
-    {
-        allUrls=readUrls();
+
+    //sets all the urls in an arraylist
+    public void setAllUrls() {
+        allUrls = readUrls();
     }
-    public ArrayList<String> getAllWords()
-    {
+
+
+    public ArrayList<String> getAllWords() {
         return allWords;
     }
-    public ArrayList<String> getAllUrls()
-    {
+
+    public ArrayList<String> getAllUrls() {
         return allUrls;
     }
 
-    public ArrayList<String> readUrls()
-    {
-        ArrayList<String>urls=new ArrayList<>();
+    //The function reads urls from the given file(url.txt) and returns the arraylist
+    public ArrayList<String> readUrls() {
+        ArrayList<String> urls = new ArrayList<>();
         try {
-            File myfile= new File("Assignment1/src/url.txt");
-            FileReader fileReader=new FileReader(myfile);
+            File myfile = new File("Assignment1/src/url.txt");
+            FileReader fileReader = new FileReader(myfile);
 
-            BufferedReader reader=new BufferedReader(fileReader);
+            BufferedReader reader = new BufferedReader(fileReader);
 
             String line;
-            while((line = reader.readLine())!=null)
-            {
+            while ((line = reader.readLine()) != null) {
                 urls.add(line);
             }
             reader.close();
 
-        }
-        catch (Exception e)
-        {
+        } catch (Exception e) {
             e.printStackTrace();
         }
         return urls;
     }
 
-    public ArrayList<String> readWords()
-    {
-        ArrayList<String>words=new ArrayList<>();
+    //The function reads words from the given file(words.txt) and returns the arraylist
+    public ArrayList<String> readWords() {
+        ArrayList<String> words = new ArrayList<>();
         try {
-            File myfile= new File("Assignment1/src/words.txt");
-            FileReader fileReader=new FileReader(myfile);
+            File myfile = new File("Assignment1/src/words.txt");
+            FileReader fileReader = new FileReader(myfile);
 
-            BufferedReader reader=new BufferedReader(fileReader);
+            BufferedReader reader = new BufferedReader(fileReader);
 
             String line;
-            while((line = reader.readLine())!=null)
-            {
+            while ((line = reader.readLine()) != null) {
                 words.add(line);
             }
             reader.close();
 
-        }
-        catch (Exception e)
-        {
+        } catch (Exception e) {
             e.printStackTrace();
         }
         return words;

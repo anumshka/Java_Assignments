@@ -3,11 +3,11 @@ import java.lang.*;
 
 class SortByValue {
 
-    public static Map<String, Integer> sortByValue(Map<String, Integer> hm)
-    {
+    //This class responsible to sort the map by value
+    public static Map<String, Integer> sortByValue(Map<String, Integer> hm) {
         // Create a list from elements of HashMap
-        List<Map.Entry<String, Integer> > list =
-                new LinkedList< >(hm.entrySet());
+        List<Map.Entry<String, Integer>> list =
+                new LinkedList<>(hm.entrySet());
 
         // Sort the list
         list.sort((o1, o2) -> (o2.getValue()).compareTo(o1.getValue()));
