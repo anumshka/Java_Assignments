@@ -21,11 +21,17 @@ public class Cylinder implements Shape3D {
     @Override
     public double getArea() throws InvalidException {
 
+        if (radius < 0 || height < 0) {
+            throw new InvalidException("Negative Inputs not allowed!!");
+        }
         return 2 * Math.PI * radius * (radius + height);
     }
 
     @Override
     public double getVolume() throws InvalidException {
+        if (radius < 0 || height < 0) {
+            throw new InvalidException("Negative Inputs not allowed!!");
+        }
         return Math.PI * radius * radius * height;
     }
 

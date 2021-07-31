@@ -1,12 +1,12 @@
 public class Circle implements Shape2D {
 
-    int radius;
+    double radius;
 
-    public int getRadius() {
+    public double getRadius() {
         return radius;
     }
 
-    public void setRadius(int radius) {
+    public void setRadius(double radius) {
         this.radius = radius;
     }
 

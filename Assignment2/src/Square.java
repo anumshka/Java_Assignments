@@ -6,7 +6,7 @@ public class Square implements Shape2D {
         return side;
     }
 
-    public void setSide(int side) {
+    public void setSide(double side) {
         this.side = side;
     }
 
