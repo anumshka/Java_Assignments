@@ -1,9 +1,9 @@
 public class Employee {
 
-    String Name;
-    String Email;
-    int Age;
-    String DOB;
+    private String Name;
+    private String Email;
+    private int Age;
+    private String DOB;
 
     //getter and setter methods
     public String getName() {
