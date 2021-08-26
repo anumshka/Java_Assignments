@@ -1,0 +1,4 @@
+Taylor Swift,31,13-12-1989,taylor.swift13@gmail.com
+Rishabh Dubey,20,rish.dubey17@gmail.com
+Rachel Green,20,01-01-2001,rachel.green@gmail.com
+Chandler Bing,20,01-02-2001,chandler.bing@gmail.com
